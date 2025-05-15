@@ -91,6 +91,10 @@ function registerGeoLocate(mapInstance) {
 }
 registerGeoLocate(map)
 
+
+
+
+
 function registerWFSReadAndWriteLayer(mapInstance, toc) {
   // // Settings - These need to agree with the definition of the WFS layer in Geoserver
   // var namespace_prefix = "geo1007";
@@ -99,7 +103,7 @@ function registerWFSReadAndWriteLayer(mapInstance, toc) {
   // var layer_name = "pois"
   // var geom_column_name = "geom"
 
-  vvar namespace_prefix = "geo1007";
+  var namespace_prefix = "geo1007";
   var namespace_uri = "http://all.kinds.of.data";
   var server_url = "https://varioscale.bk.tudelft.nl"
   var layer_name = "pois"
@@ -151,6 +155,12 @@ function registerWFSReadAndWriteLayer(mapInstance, toc) {
   return performInsert; // return function reference to be able to insert data
 }
 let insertWFS = registerWFSReadAndWriteLayer(map, toc)
+
+
+
+
+
+
 
 function registerPopUpForInsert(mapInstance) {
   var popup = L.popup();
